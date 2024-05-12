@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şehrim</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/sehrim.css"> 
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm sticky-top bg-dark navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilgi_alanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <!-- !!!!! -->
+                    <li class="nav-item bg-secondary" id="login" style="font-weight: bolder;">
+                        <a class="nav-link" href="login.html">Giriş Yap</a>
+                    </li>
+                    <!-- !!!!! -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2 style="text-decoration: underline; text-align: center; margin: 10px 100px ; padding: 5px 0px; background-color: black; border-radius: 20px; color: white;">İstanbul:</h2>
+
+
+    <div class="container" style="width: 50%;">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <a href="#galata"><img src="https://cdn2.enuygun.com/media/lib/825x620/uploads/image/galatakulesi-33530.webp" class="d-block w-100" alt="Galata Kulesi resmi"></a>
+                <div class="carousel-caption">
+                    <h5 style="background-color: rgba(0,0,0,0.8);">Galata Kulesi</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <a href="#bogaz"><img src="https://cdn2.enuygun.com/media/lib/825x620/uploads/image/bogaz-turu-51112.webp" class="d-block w-100" alt="İstanbul Boğazı resmi"></a>
+                <div class="carousel-caption">
+                    <h5 style="background-color: rgba(0,0,0,0.8);">İstanbul Boğazı</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <a href="#miniaturk"><img src="https://cdn2.enuygun.com/media/lib/825x620/uploads/image/miniaturk-33556.webp" class="d-block w-100" alt="Miniatürk resmi"></a>
+                <div class="carousel-caption">
+                    <h5 style="background-color: rgba(0,0,0,0.8);">Miniatürk</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <a href="#akvaryum"><img src="http://assets.enuygun.com/media/lib/825x620/uploads/image/istanbul-akvaryum-54566.webp" class="d-block w-100" alt="İstanbul Akvaryum resmi"></a>
+                <div class="carousel-caption">
+                    <h5 style="background-color: rgba(0,0,0,0.8);">İstanbul Akvaryum</h5>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <a href="#vialand"><img src="http://assets.enuygun.com/media/lib/825x620/uploads/image/vialand-tema-park-46117.webp" class="d-block w-100" alt="Vialand resmi"></a>
+                <div class="carousel-caption">
+                    <h5 style="background-color: rgba(0,0,0,0.8);">Vialand</h5>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+
+    <hr>
+
+
+    <div id="galata" class="lokasyonlar" >
+        <h4>Galata Kulesi:</h4>
+        <p>Beyoğlu'nda bulunan kule, 14. yüzyılda yıllarda Bizanslılar tarafından gözetleme kulesi olarak inşa edilmiştir, dünyadaki en eski kulelerden biridir ve günümüzde İstanbul'daki en gözde turist mekanlarından biridir. Boğaziçi'nin muhteşem manzarasını seyretmek için mükemmel bir lokasyondadır.</p>
+    </div>
+
+    <div id="bogaz" class="lokasyonlar">
+        <h4>İstanbul Boğazı:</h4>
+        <p>Marmara ve Karadeniz'in birleştiği nokta olan İstanbul Boğazı, 32 kilometre uzunluğundadır. Boğaz turlarına katılıp yaklaşık bir saat boyunca boğazı doyasıya yaşamak (boğaz'ın muhteşem manzarası, tarihi köprüler ve görkemli saraylar...) bence yapılabilecek mükemmel aktivitelerden biri. </p>
+    </div>
+
+    <div id="miniaturk" class="lokasyonlar">
+        <h4>Miniatürk:</h4>    
+        <p>Türkiyenin ilk minyatür parkı olan Miniatürk, "Büyük Ülkenin Küçük Bir Modeli" sloganı ile açılmıştır ve dünyanın en geniş alana kurulu(60 bin metrekare) minyatür parkıdır. Ülkenin dört bir yanından seçilmiş tarihî 137 farklı mimari eserin, 1/25 oranında küçültülmüş detaylı maketlerini içermektedir. Kısa sürede çok fazla şey hakkında bilgi sahibi olabileceğiniz güzel bir yer, gitmenizi şiddetle tavsiye ederim.</p>
+    </div>
     
+    <div id="akvaryum" class="lokasyonlar">
+        <h4>İstanbul Akvaryum:</h4>
+        <p>Dünya'nın en büyük tematik akvaryumudur. Binlerce türde deniz ve kara canlısına ev sahipliği yapan bu akvaryumu bence her insan deneyimlemeli. Muhtemelen hayatınızda hiç göremeyeceğiniz canlıları orada bizzat kendi gözlerinizle görme imkanı elde ediyorsunuz.</p>
+    </div>
+
+    <div id="vialand" class="lokasyonlar">
+        <h4>Vialand Tema Park:</h4>
+        <p>Vialand içinde hem Tema Park, hem de gösteri merkezi bulunan bir AVM. İster alışveriş yapın ister eğlence merkezlerine girin (Nefeskesen, Adalet Kulesi, Fatih’in Rüyası, Viking, 360 Plus, Saray Salıncağı, Yaban Arısı, King Kong...) içerisinde yapılabilecek bir sürü şey var.</p>
+    </div>
+    
+
 </body>
 </html>
