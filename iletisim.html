@@ -11,6 +11,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/css/iletisim.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-sm sticky-top bg-dark navbar-dark">
@@ -37,7 +41,7 @@
                         <a class="nav-link" href="ilgi_alanlarim.html">İlgi Alanlarım</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                        <a class="nav-link" href="iletisim.html" style="text-decoration: underline;">İletişim</a>
                     </li>
                     <!-- !!!!! -->
                     <li class="nav-item bg-secondary" id="login" style="font-weight: bolder;">
@@ -49,6 +53,58 @@
         </div>
     </nav>
 
+
+    <main>
+        <div id="content" class="dancing-script"> İletişim Formu :</div>
+
+        <div id="form">
+            <form action="#" id="form1">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Adınız:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="surname">Soyadınız:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="surname" name="surname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-posta Adresi:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tel">Telefon:</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="tel" name="tel" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="msg">Mesajınız:</label>
+                        </td>
+                        <td>
+                            <textarea id="msg" name="msg" autocomplete="off" style="width: 90%; height: 120px;" required></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" value="Gönder" class="btn btn-secondary">
+            </form>
+        </div>
+    </main>
     
     
 </body>
