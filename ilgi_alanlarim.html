@@ -15,6 +15,11 @@
     <!--  -->
     <script src="resources/js/ilgi_alanlarim.js"></script>
     <!--  -->
+    <style>
+        button{
+            width: 220px;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +44,7 @@
                         <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ilgi_alanlarim.html">İlgi Alanlarım</a>
+                        <a class="nav-link" href="ilgi_alanlarim.html" style="text-decoration: underline;">İlgi Alanlarım</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="iletisim.html">İletişim</a>
@@ -67,7 +72,7 @@
 
     <div class="buttons">
         <div class="container mt-3">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" onclick="show_airing()">Şu anda yayındaki en iyi 10 anime</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" onclick="show_airing()">Şu anda yayındaki en iyi 10 animeyi göster</button>
         </div>
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
@@ -253,7 +258,7 @@
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">En İyi 10 Anime:</h4>
+                        <h4 class="modal-title">Şu Anda En Popüler 10 Anime:</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <!-- Modal body -->

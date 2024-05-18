@@ -16,20 +16,20 @@ const options2 = {
 	}
 };
 
-const url3 = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
-const options3 = {
-	method: 'POST',
-	headers: {
-		'content-type': 'application/x-www-form-urlencoded',
-		'X-RapidAPI-Key': '64c48bfa45msh2b597d40070e5a9p16dbd6jsn96c32450ea9e',
-		'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
-	},
-	body: new URLSearchParams({
-		from: 'auto',
-		to: 'tr',
-		text: 'Hello There!'
-	})
-};
+// const url3 = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
+// const options3 = {
+// 	method: 'POST',
+// 	headers: {
+// 		'content-type': 'application/x-www-form-urlencoded',
+// 		'X-RapidAPI-Key': '64c48bfa45msh2b597d40070e5a9p16dbd6jsn96c32450ea9e',
+// 		'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
+// 	},
+// 	body: new URLSearchParams({
+// 		from: 'auto',
+// 		to: 'tr',
+// 		text: 'Hello There!'
+// 	})
+// };
 
 
 async function show_airing(){
